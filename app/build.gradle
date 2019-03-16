@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    /*//关闭AS校验我们的资源文件，或者说是PNG等图片
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false*/
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.xy.plan"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-rc02'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.yanzhenjie.recyclerview:support:1.3.1'
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':group_library')
+
+}

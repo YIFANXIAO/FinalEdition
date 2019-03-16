@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/normalModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通模式"
+        />
+
+        <Button
+            android:id="@+id/lockModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="严格模式"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="专注时长"
+        />
+
+        <EditText
+            android:id="@+id/concentrateDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="休息时长"
+        />
+        <EditText
+            android:id="@+id/restDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/selectWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择工作时长" />
+
+    <Button
+        android:id="@+id/selectRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择休息时长" />
+
+
+</LinearLayout>

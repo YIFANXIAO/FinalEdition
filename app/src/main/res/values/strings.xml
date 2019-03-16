@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Plan</string>
+    <string name="completed">Plan</string>
+    <string name="unfinished">Plan</string>
+    <string name="delete">Plan</string>
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <string name="begin_date">开始时间</string>
+    <string name="end_date">结束时间</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>
+
+
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <com.plan.TitleLayout1
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/current_time_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/PlanName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:text="计划名称"
+        android:textColor="@color/current_time_text"
+        android:textSize="15sp"/>
+        <EditText
+        android:id="@+id/InputPlanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入..." />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/current_time_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/PlanType"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:text="计划类型"
+        android:textColor="@color/current_time_text"
+        android:textSize="15sp"/>
+        <EditText
+        android:id="@+id/InputPlanType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/pull_down1"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/dataset"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/current_time_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/PriorityLecel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:text="优先级"
+        android:textColor="@color/current_time_text"
+        android:textSize="15sp"/>
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/current_time_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+        android:id="@+id/Remark"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:text="具体描述"
+        android:textColor="@color/current_time_text"
+        android:textSize="15sp"/>
+    </LinearLayout>
+    <EditText
+    android:id="@+id/InputRemark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入..."
+    android:background="@drawable/edit_background"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/progress_barmove"
+        />
+    <Button
+    android:id="@+id/btnClose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="点击关闭" />
+</LinearLayout>

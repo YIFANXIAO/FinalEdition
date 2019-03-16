@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="60sp"
+    />
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="锁死工作钟"
+    />
+
+    <Button
+        android:id="@+id/lock_pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        />
+
+    <Button
+        android:id="@+id/lock_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结束"
+        />
+
+    <Button
+        android:id="@+id/lock_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重新开始"
+        />
+
+    <Button
+        android:id="@+id/lock_beginMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始音乐"
+        />
+
+    <Button
+        android:id="@+id/lock_musicList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音乐列表"
+        />
+
+
+
+</LinearLayout>
